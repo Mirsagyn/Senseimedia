@@ -1,0 +1,320 @@
+@media (max-width: 1100px) {
+	.button {
+		font-size: 14px;
+		padding: 12px 35px;
+	}
+
+	.header__nav {
+		gap: 20px;
+		font-size: 14px;
+	}
+
+	/* Intro */
+
+	.intro-text__subtitle {
+		font-size: 35px;
+	}
+
+	.intro-text__title {
+		font-size: 45px;
+	}
+
+	.intro-text__text {
+		font-size: 14px;
+	}
+
+	.intro-text__button {
+		font-size: 14px;
+		padding: 10px 15px;
+		margin-right: 5px;
+	}
+
+	/* design */
+	.design__title {
+		font-size: 28px;
+		text-transform: uppercase;
+		padding: 30px 55px;
+	}
+
+	.design__number {
+		font-size: 30px;
+	}
+
+	.design__text {
+		font-size: 14px;
+	}
+
+	.design__line {
+		display: none;
+	}
+
+	.design__line-2 {
+		display: none;
+	}
+
+	/*  services  */
+	.services__subtitle {
+		font-size: 14px;
+	}
+
+	.services__list {
+		font-size: 14px;
+	}
+
+	.services__label {
+		font-size: 14px;
+	}
+
+	.services__label span {
+		font-size: 24px;
+	}
+
+	/* ==== form ==== */
+	.form-group {
+		margin: 15px 0 0;
+	}
+
+	.form__name-phone {
+		display: flex;
+		flex-direction: column;
+		gap: 0px;
+	}
+
+	/* ===== works ===== */
+	.works__title {
+		text-align: center;
+	}
+
+	.works__row {
+		display: block;
+	}
+
+	.works__alibaba {
+		margin: 10px 50px;
+	}
+
+	.works__alibaba::after {
+		display: none;
+	}
+
+	.works__macys {
+		margin: 10px 50px;
+	}
+
+	.works__macys::after {
+		display: none;
+	}
+
+	.result__numbers {
+		padding: 15px 15px;
+	}
+
+}
+
+@media (max-width: 992px) {
+	.button {
+		display: none;
+	}
+
+	.header__nav {
+		display: none;
+	}
+
+	.menu-button-container {
+		display: flex;
+	}
+
+	.menu {
+		position: absolute;
+		top: 0;
+		margin-top: 50px;
+		left: 0;
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#menu-toggle~.menu li {
+		height: 0;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+	}
+
+	#menu-toggle:checked~.menu li {
+		border: 1px solid #333;
+		height: 2.5em;
+		padding: 0.5em;
+		transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+	}
+
+	.menu>li {
+		display: flex;
+		justify-content: center;
+		margin: 0;
+		padding: 0.5em 0;
+		width: 100%;
+		color: white;
+		background-color: #222;
+	}
+
+	.menu>li:not(:last-child) {
+		border-bottom: 1px solid #444;
+	}
+
+	/* Intro */
+
+	.intro__inner {
+		display: flex;
+		flex-direction: column-reverse;
+		margin-top: 150px;
+		text-align: center;
+	}
+
+	.intro-content__item {
+		margin-top: 20px;
+	}
+
+	/* design */
+	.design {
+		margin-top: 80px;
+	}
+
+	/*  services  */
+
+	.services__title {
+		text-align: center;
+	}
+
+	.services__row {
+		max-width: 300px;
+		display: block;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.services__subtitle {
+		font-size: 18px;
+	}
+
+	.services__list {
+		font-size: 16px;
+		list-style: none;
+	}
+
+	.services__list li {
+		list-style: none;
+	}
+
+	.services__line {
+		max-width: 255px;
+		border-bottom: 2px solid #E2E2E2;
+	}
+
+	/* ===== consult ======= */
+	.consult__row {
+		display: flex;
+		justify-content: center;
+		gap: 15px;
+		margin-top: 90px;
+	}
+
+	.consult__title {
+		font-size: 28px;
+		line-height: 34px;
+	}
+
+	.consult__text {
+		font-size: 14px;
+		padding: 15px 0 0 0;
+		line-height: 24px;
+	}
+
+	.consult__img {
+		display: none;
+	}
+
+	/* form  */
+	.form-group {
+		margin: 15px 0 0;
+	}
+
+	.textarea {
+		height: 100px;
+		resize: none;
+	}
+
+	.btn {
+		display: block;
+		margin: 23px 0 0;
+		padding: 10px 45px;
+	}
+
+	/* ==== media ==== */
+	.media__column {
+		margin-right: 10px;
+	}
+}
+
+@media (max-width: 767px) {
+	.intro__image {
+		display: none;
+	}
+
+	.intro__inner {
+		margin-top: -150px;
+	}
+
+	/* design */
+	.design {
+		margin-top: -210px;
+	}
+
+	.design-text__text {
+		display: inline-flex;
+		flex-direction: column;
+		gap: 5px;
+	}
+
+	.design__inner {
+		height: 450px;
+	}
+
+	.design-content-item {
+		text-align: center;
+	}
+
+	/* ==== media ==== */
+	.media__page {
+		display: flex;
+		flex-direction: column-reverse;
+		text-align: center;
+	}
+
+	.media__logo {
+		display: none;
+	}
+
+	.media__btn {
+		font-size: 14px;
+		margin: 20px 70px 40px 70px;
+	}
+
+	.media__column {
+		align-items: center;
+	}
+}
+
+@media (max-width: 575px) {
+	.intro-text__text-btn {
+		display: inline-flex;
+		flex-direction: column;
+		gap: 5px;
+	}
+
+	.works__results {
+		display: block;
+	}
+}
